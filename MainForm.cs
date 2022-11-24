@@ -57,7 +57,7 @@ namespace MetaDataStringEditor {
         // 菜单栏
         private void 加载ToolStripMenuItem_Click(object sender, EventArgs e) {
             if (status == FormStatus.Loading || status == FormStatus.Saving) {
-                Logger.E("后台操作进行中");
+                Logger.E("Background operation in progress");
                 return;
             }
 
@@ -70,7 +70,7 @@ namespace MetaDataStringEditor {
                         Invoke(new Action(delegate { Text = openFileDialog1.FileName; }));
                         Invoke(new Action(RefreshListView));
                         status = FormStatus.Editing;
-                        Logger.I("加载完成");
+                        Logger.I("Loading completed");
                     } catch (Exception ex) {
                         Logger.E(ex.ToString());
                         file?.Dispose();
@@ -82,7 +82,7 @@ namespace MetaDataStringEditor {
         }
 
         private void RefreshListView() {
-            Logger.I("刷新列表");
+            Logger.I("Refreshing list");
 
             listView1.BeginUpdate();
             for (int i = 0; i < file.strBytes.Count; i++) {
@@ -96,7 +96,7 @@ namespace MetaDataStringEditor {
 
         private void 另存为ToolStripMenuItem_Click(object sender, EventArgs e) {
             if (status != FormStatus.Editing) {
-                Logger.E("状态错误");
+                Logger.E("Status error");
                 return;
             }
 
@@ -138,7 +138,7 @@ namespace MetaDataStringEditor {
                 }
 
             }
-            Logger.I("找不到搜索字符串");
+            Logger.I("Search string not found");
         }
 
         // 修改
@@ -184,6 +184,10 @@ namespace MetaDataStringEditor {
 
         private enum FormStatus { Waiting, Loading, Saving, Editing }
 
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public static class Logger {

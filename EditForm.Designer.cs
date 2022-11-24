@@ -31,47 +31,47 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 13);
+            this.textBox1.Location = new System.Drawing.Point(13, 14);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(332, 203);
+            this.textBox1.Size = new System.Drawing.Size(332, 220);
             this.textBox1.TabIndex = 0;
             // 
             // 保存
             // 
-            this.保存.Location = new System.Drawing.Point(270, 230);
+            this.保存.Location = new System.Drawing.Point(270, 249);
             this.保存.Name = "保存";
-            this.保存.Size = new System.Drawing.Size(75, 23);
+            this.保存.Size = new System.Drawing.Size(75, 25);
             this.保存.TabIndex = 1;
-            this.保存.Text = "保存";
+            this.保存.Text = "Save";
             this.保存.UseVisualStyleBackColor = true;
             this.保存.Click += new System.EventHandler(this.保存_Click);
             // 
             // 放弃此次修改
             // 
-            this.放弃此次修改.Location = new System.Drawing.Point(173, 230);
+            this.放弃此次修改.Location = new System.Drawing.Point(173, 249);
             this.放弃此次修改.Name = "放弃此次修改";
-            this.放弃此次修改.Size = new System.Drawing.Size(91, 23);
+            this.放弃此次修改.Size = new System.Drawing.Size(91, 25);
             this.放弃此次修改.TabIndex = 2;
-            this.放弃此次修改.Text = "放弃此次修改";
+            this.放弃此次修改.Text = "Discard";
             this.放弃此次修改.UseVisualStyleBackColor = true;
             this.放弃此次修改.Click += new System.EventHandler(this.放弃此次修改_Click);
             // 
             // 还原该串的修改
             // 
-            this.还原该串的修改.Location = new System.Drawing.Point(62, 230);
+            this.还原该串的修改.Location = new System.Drawing.Point(62, 249);
             this.还原该串的修改.Name = "还原该串的修改";
-            this.还原该串的修改.Size = new System.Drawing.Size(105, 23);
+            this.还原该串的修改.Size = new System.Drawing.Size(105, 25);
             this.还原该串的修改.TabIndex = 3;
-            this.还原该串的修改.Text = "还原该串的修改";
+            this.还原该串的修改.Text = "Revert";
             this.还原该串的修改.UseVisualStyleBackColor = true;
             this.还原该串的修改.Click += new System.EventHandler(this.还原该串的修改_Click);
             // 
             // EditForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 265);
+            this.ClientSize = new System.Drawing.Size(357, 287);
             this.Controls.Add(this.还原该串的修改);
             this.Controls.Add(this.放弃此次修改);
             this.Controls.Add(this.保存);
