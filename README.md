@@ -1,5 +1,8 @@
 # global-metadata.dat editor for Unity games (translated to English by kitenokgene)
 &emsp;&emsp;For Android games exported by the Unity-il2cpp script backend, the strings appearing in the code will be compiled into the assets\bin\Data\Managed\Metadata\global-metadata.dat file, as part of the localization work. This is a simple tool for modifying the strings in it.
+## How to run? 
+Open .sln file in Visual Studio 2019 and compile it with F6
+Or download release
 ## References
 - [il2cppdumper](https://github.com/Perfare/Il2CppDumper)<br>
 The understanding of the content of this file is learned from the source code of this tool. This tool itself is used to export class definitions from the compiled libil2cpp.so file and global-metadata.dat file. The export form includes IDA available  It's a great tool to rename scripts, UABE and AssetStudio-available DLLs, etc.
