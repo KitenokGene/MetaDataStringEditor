@@ -1,7 +1,7 @@
 # global-metadata.dat editor for Unity games (translated to English by kitenokgene)
 &emsp;&emsp;For Android games exported by the Unity-il2cpp script backend, the strings appearing in the code will be compiled into the assets\bin\Data\Managed\Metadata\global-metadata.dat file, as part of the localization work. This is a simple tool for modifying the strings in it.
 ## How to run? 
-Open .sln file in Visual Studio 2019 and compile it with F6
+Open .sln file in Visual Studio 2019 and compile it
 Or download [release](https://github.com/KitenokGene/MetaDataStringEditor/releases/tag/kek)
 ## References
 - [il2cppdumper](https://github.com/Perfare/Il2CppDumper)<br>
